@@ -56,7 +56,8 @@ class HangpersonApp < Sinatra::Base
   
   get '/win' do
     ### YOUR CODE HERE ###
-    erb :win # You may change/remove this line
+    # erb :win # You may change/remove this line
+    redirect '/win'
   end
   
   get '/lose' do
