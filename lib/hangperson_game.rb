@@ -10,7 +10,7 @@ class HangpersonGame
   
   def initialize(word)
     @word = word.downcase
-    @guesses = ''
+    @guesses = '' 
     @wrong_guesses = ''
     @word_with_guesses=String.new('')
     @word.length.times {@word_with_guesses = @word_with_guesses + '-'}
@@ -37,7 +37,6 @@ end
     @word_array.each_with_index{|value,index|@word_with_guesses[index] = value if value == @guess}
     @check_win_or_lose = :win  if @word == @word_with_guesses
     @check_win_or_lose = :lose if @wrong_guesses.length == 7
-    byebug
   end
 
   attr_accessor :word
